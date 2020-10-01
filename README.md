@@ -1,8 +1,10 @@
 # HACTOBERFEST2020
+![hack](https://user-images.githubusercontent.com/48166328/94787275-ba253600-03ef-11eb-8822-6b34943e9104.jpeg)
 
-## Let's contribute in the simplest way possible.
 
-Let's make a simple contribution to this repository.
+## Open source contribution is always fun and exciting :star_struck:
+
+Let's make a contribution to this repository.
 
 Let me show you how easy it is:
 
