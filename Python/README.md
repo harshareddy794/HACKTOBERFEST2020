@@ -1,2 +1,6 @@
-# HACTOBERFEST2020
-Repository for hacktoberfest 2020
+# HACTOBERFEST2020 
+<h1> Python </h1>
+
+* Add python script here
+
+* Create a saparate folder for each script
