@@ -3,4 +3,4 @@
 
 * Add python script here
 
-* Create a saparate folder for each script
+* Create a separate folder for each script
