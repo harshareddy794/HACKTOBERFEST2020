@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Flight Delay Prediction System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Flight Delay Prediction System</h1>
+            <form action = "{{ url_for('login')}}" method="post">
+                <input type="text" class="form-control" name="month" placeholder="Enter month" required="required"/>
+                <input type="text" class="form-control" name="day" placeholder="Enter day" required="required"/>
+                <input type="text" class="form-control" name="scheduled_dep" placeholder="Enter scheduled departure" required="required"/>
+                <input type="text" class="form-control" name="scheduled_arrival" placeholder="Enter scheduled arrival" required="required"/>
+                
+                
+                <input type="text" class="form-control"name="dep_delay" placeholder="Enter Departure Delay" required="required"/>
+                <!-- <input type="text" class="form-control" name="distance" placeholder="Enter Distance" required="required"/> -->
+                <!-- <input type="text" class="form-control"name="diverted" placeholder="Enter diverted" required="required"/> -->
+                
+                <label>Enter Flight Divertion Status:</label>
+                  <select class="form-control" name="diverted">
+                    <option value="1">Diverted</option>
+                    <option value="0">Not Diverted</option>
+                </select>
+                <br>
+                <!-- <input type="text" class="form-control" name="cancelled" placeholder="Enter cancellation status" required="required"/> -->
+                <label>Enter Flight Cancellation Status:</label>
+                  <select class="form-control" name="cancelled">
+                    <option value="1">Cancelled</option>
+                    <option value="0">Not Cancelled</option>
+                </select>
+                <br>
+                <label>Route :</label>
+                  <select class="form-control" name="route">
+                    <option value="0">from  ABE to ATL</option>
+                    <option value="1">from  ABE to DTW</option>
+                    <option value="2">from  ABE to ORD</option>
+                    <option value="3">from  ABI to DFW</option>
+                    <option value="4">from  ABQ to ATL</option>
+                    <option value="5">from  ABQ to BWI</option>
+                    <option value="6">from  ABQ to DAL</option>
+                    <option value="7">from  ABQ to DEN</option>
+                    <option value="8">from  ABQ to DFW</option>
+                    <option value="9">from  ABQ to HOU</option>
+                    <option value="10">from  ABQ to IAH</option>
+                    <option value="11">from  ABQ to JFK</option>
+                    <option value="12">from  ABQ to LAS</option>
+                    <option value="13">from  ABQ to LAX</option>
+                    <option value="14">from  ABQ to MCI</option>
+                    <option value="15">from  ABQ to MDW</option>
+                    <option value="16">from  ABQ to MSP</option>
+                    <option value="17">from  ABQ to OAK</option>
+                    <option value="18">from  ABQ to ORD</option>
+                    <option value="19">from  ABQ to PDX</option>
+                    <option value="20">from  ABQ to PHX</option>
+                    <option value="21">from  ABQ to SAN</option>
+                    <option value="22">from  ABQ to SEA</option>
+                    <option value="23">from  ABQ to SFO</option>
+                    <option value="24">from  ABQ to SLC</option>
+                    <option value="25">from  ABR to MSP</option>
+                    <option value="26">from  ABY to ATL</option>
+                    <option value="27">from  ACT to DFW</option>
+                    <option value="28">from  ACV to SFO</option>
+                    <option value="29">from  ACY to FLL</option>
+                    <option value="30">from  ACY to MCO</option>
+                    <option value="31">from  ACY to MYR</option>
+                    <option value="32">from ACY to PBI</option>
+                    <option value="33">from  ACY to RSW</option>
+                    <option value="34">from  ACY to TPA</option>
+                    <option value="35">from  ADK to ANC</option>
+                    <option value="36">from  ADQ to ANC</option>
+                    <option value="37">from  AEX to ATL</option>
+                    <option value="38">from  AEX to DFW</option>
+                    <option value="39">from  AEX to IAH</option>
+                    <option value="40">from AGS to ATL</option>
+                    <option value="41">from  ALB to ATL</option>
+                    <option value="42">from  ALB to BWI</option>
+                    <option value="43">from  ALB to CLT</option>
+                    <option value="44">from  ALB to FLL</option>
+                    <option value="45">from ALB to IAD</option>
+                    <option value="46">from  ALB to LAS</option>
+                    <option value="47">from  ALB to MCO</option>
+                    <option value="48">from ALB to MDW</option>
+                    <option value="49">from  ALB to ORD</option>
+                    <option value="50">from  ALB to TPA</option>
+                </select>
+                <br>
+                <!-- <input type="text" class="form-control" name="air_sys_delay" placeholder="Enter Air System Delay" required="required"/>
+                <input type="text" class="form-control" name="security_delay" placeholder="Enter security delay" required="required"/>
+                <input type="text" class="form-control" name="airline_delay" placeholder="Enter Airline Delay" required="required"/>
+                <input type="text" class="form-control" name="late_aircraft_delay" placeholder="Enter Late Aircraft Delay" required="required"/>
+                <input type="text" class="form-control" name="weather_delay" placeholder="Enter Weather Delay" required="required"/> -->
+
+                <button type="submit" class=" btn btn-primary btn-block btn-large">Predict</button>
+
+            </form>
+            <br>
+            <br>
+            {{showcase}}
+
+        </div>
+    </body>
+</html>
