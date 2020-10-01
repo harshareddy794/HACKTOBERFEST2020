@@ -12,7 +12,7 @@ The following ML algorithms were implemented.
 
 nn.py
 
-Deep learning model designed using Tensorflow with the following model structure.
+Deep learning model designed using Keras with the following model structure.
 
 Input - 20
 Mid layer - 16
