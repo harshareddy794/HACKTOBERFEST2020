@@ -12,4 +12,4 @@ Mixing files from different sources may cause duplicate code to be included, or 
 For Installing refer the [CDN](https://threejs.org/docs/#manual/en/introduction/Installation) of ThreeJS.
 
 ## Demo:
-![Output](E:\WORK\HACTOBERFEST2020\Java script\ThreeJs-Demo\ezgif.com-video-to-gif.gif)
+![Output](HACTOBERFEST2020\Java script\ThreeJs-Demo\ezgif.com-video-to-gif.gif)
