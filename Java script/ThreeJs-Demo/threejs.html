@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS</title>
+</head>
+<body>
+    <div id="canvas"></div>
+<script src="https://unpkg.com/three@0.120.1/build/three.js"></script>
+<script>
+  // Find the latest version by visiting https://unpkg.com/three. The URL will
+  // redirect to the newest stable release.
+
+  var camera, scene, renderer;
+  var geometry, material, mesh;
+  
+  var CameraPosition = 1;
+  
+  function init() {
+    
+    camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, .01, 20 );
+    camera.position.z = CameraPosition;
+    
+    scene = new THREE.Scene();
+
+    geometry = new THREE.BoxGeometry( 0.5, 0.5, 0.5 );
+    material = new THREE.MeshNormalMaterial();
+
+    mesh = new THREE.Mesh( geometry, material );
+    
+    scene.add(mesh);
+    
+    renderer = new THREE.WebGLRenderer( { antialias: true } );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.getElementById("canvas").appendChild( renderer.domElement );
+  }
+  
+  function animate() {
+    requestAnimationFrame( animate );
+    camera.position.z = CameraPosition;
+
+    mesh.rotation.x += .01;
+    mesh.rotation.y += .02;
+    
+    renderer.render( scene, camera );
+  }
+  init();
+  animate();
+  
+  document.body.onkeyup = function(e) {
+    e.preventDefault();
+    const keyCode = e.which || e.keyCode;
+    // UP = 38
+    // DN = 40
+    if (keyCode === 38) {
+      CameraPosition += 0.5;
+    } else if (keyCode === 40) {
+      CameraPosition -= 0.5;
+    }
+    return false;
+  };
+</script>
+</body>
+</html>
