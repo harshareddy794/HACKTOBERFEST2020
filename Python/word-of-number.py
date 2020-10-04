@@ -1,23 +1,13 @@
-name=input()
-num=["","one","two","three","four","five","six","seven","eight","nine"]
-for i in range(0,len(name)):
- if name[i]=='1':
-   print(num[1],end=" ")
- elif name[i]=='2':
-   print(num[2],end=" ")
- elif name[i]=='3':
-   print(num[3],end=" ")
- elif name[i]=='4':
-   print(num[4],end=" ")
- elif name[i]=='5':
-   print(num[5],end=" ")
- elif name[i]=='6':
-   print(num[6],end=" ")
- elif name[i]=='7':
-   print(num[7],end=" ")
- elif name[i]=='8':
-   print(num[8],end=" ")
- elif name[i]=='9':
-   print(num[9],end=" ")
- else:
-   print("zero")
+#The below program is an optimized method for converting the integers to their English representations.
+''' For example:
+>>>Enter a number34
+   thirty four
+   For this conversion ,a package named n2w is used.If the package is not installed in your local machine,install it using the command :
+   >>>pip install n2w
+'''
+def int2word(integer):    # A function is defined that will take integer value as an argument and will return the String output 
+    return n2w.convert(num)
+if __name__ == "__main__":
+    import n2w   # the package n2w is imported for performing the number to word calculation
+    num=input("Enter a number:")   # A number is taken as input from the user
+    print(int2word(num))
