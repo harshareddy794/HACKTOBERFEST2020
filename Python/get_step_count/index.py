@@ -12,8 +12,8 @@ from googleapiclient.discovery import build
 from oauth2client.client import OAuth2WebServerFlow
 
 # Copy your credentials from the Google Developers Console
-CLIENT_ID = '1091314763927-uuvhf08n5rtnen0j4oqrj02mbed28chn.apps.googleusercontent.com'
-CLIENT_SECRET = '4_ASoOmBu5RzSq5IPUd8r8fe'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
 # Check https://developers.google.com/fit/rest/v1/reference/users/dataSources/datasets/get
 # for all available scopes
@@ -31,7 +31,7 @@ END = int(time.mktime(NOW.timetuple())*1000000000)
 DATA_SET = "%s-%s" % (START, END)
 
 # Redirect URI for installed apps
-REDIRECT_URI = 'http://localhost:4000/auth/google/callback'
+REDIRECT_URI = ''
 
 def retrieve_data():
     """
