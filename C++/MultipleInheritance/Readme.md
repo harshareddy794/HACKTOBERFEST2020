@@ -9,6 +9,8 @@ Multiple Inheritance is a feature of C++ where a class can inherit from more tha
 
 
 ***QUESTION :
+
+
 You need to modify the class D and implement the function update_val which sets D's val to new_val by manipulating the value by only calling the func defined in classes A, B and C.
 It is guaranteed that new_val has only  and  as its prime factors.
 Input Format
