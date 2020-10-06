@@ -44,7 +44,7 @@ For example:
 
 ## 5. Make the required changes
 
-Check out the [CONTRIBUTE.md](/contribute.md) file to see what all contributions can you make.
+Check out the [CONTRIBUTE.md](https://github.com/harshareddy794/HACTOBERFEST2020/blob/master/CONTRIBUTING.md) file to see what all contributions can you make.
 
 ---
 
