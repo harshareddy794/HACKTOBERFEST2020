@@ -1,3 +1,14 @@
+***INHERITANCE
+
+The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important feature of Object Oriented Programming.
+
+***MULTIPLE INHERITANCE
+
+Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes. i.e one sub class is inherited from more than one base classes.
+
+
+
+***QUESTION :
 You need to modify the class D and implement the function update_val which sets D's val to new_val by manipulating the value by only calling the func defined in classes A, B and C.
 It is guaranteed that new_val has only  and  as its prime factors.
 Input Format
