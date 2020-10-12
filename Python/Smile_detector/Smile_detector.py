@@ -8,7 +8,7 @@ smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
 
 def detect(gray, frame):
     """
-    A function that will do the detections
+    A function that will do the detection of face
     """
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
@@ -23,7 +23,7 @@ def detect(gray, frame):
             cv2.rectangle(roi_color, (sx, sy), (sx+sw, sy+sh), (0, 0, 255), 2)
     return frame
 
-# Doing some smile Recognition with the webcam
+# Doing smile Recognition with the webcam
 video_capture = cv2.VideoCapture(0)
 while True:
     _, frame = video_capture.read()
