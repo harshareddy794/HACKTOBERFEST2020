@@ -2,4 +2,4 @@
 > A simple python script for smile detection with `openCV` .
 1. Importing the libraries
 2. Loading the cascades
-3. Doing some smile Recognition with the webcam
+3. Doing smile Recognition with the webcam
