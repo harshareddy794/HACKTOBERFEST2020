@@ -1,6 +1,12 @@
 ***INHERITANCE
 
 The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important feature of Object Oriented Programming.
+TYPES OF INHERITANCE IS:
+SINGLE INHERITANCE
+MULTIIPLE INHERITANCE
+HERIRCRICAL INHERITANCE 
+MULTILEVEL INHERITANCE
+
 
 ***MULTIPLE INHERITANCE
 
@@ -35,3 +41,4 @@ val = 6
 C's func is called once:
 val = val*5
 val = 30
+
