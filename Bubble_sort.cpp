@@ -38,4 +38,5 @@ int main() {
    bubbleSort(arr, n);
    cout << "Array after Sorting: ";
    display(arr, n);
+   return 0;
 }
