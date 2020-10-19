@@ -1,3 +1,2 @@
-# Scripts and algorithms written in C
-- Create a separate folder for each script
-- Happy October :)
+# Selection sort in C
+  The C implementation of the selection sort algorithm 
