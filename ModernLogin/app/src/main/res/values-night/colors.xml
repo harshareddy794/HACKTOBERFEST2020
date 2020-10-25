@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--primary colors-->
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#11CFC5</color>
+
+    <!--colors for dark mode-->
+    <color name="contentTextColor">#fff</color>
+
+
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">UTS-MOBILE2020</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="title_activity_home">ScrollingActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="biodata_text">
+        "Biodata Saya. \n\n"
+
+        "Hallo saya Azhar Ashilah saya seorang fullstack \n\n developer disebuah perusahaan IT Bekasi\n "
+
+        "Saya memahami dunia programming dari sejak SMP di \n\n mana pada saat itu saya tertarik dengan\n"
+
+        "namanya cheat game, dan disitu lah saya mulai mendalami dunia programming \n\n,hal terpenting dalam\n"
+
+        "dunia programming yaitu harus sering sering berlatih ,mencoba terus menerus dan memahami\n"
+
+        "alur / life circle dari setiap bahasa pemograman itu sendiri ,so far kita tidak perlu menghafal code \n"
+
+        "jadi cukup pahamin alurnya saja ,dan semua bahasa pemograman sama.. ,salam mahasiswa ... Mercusuar"
+    </string>
+    <string name="pendidikan_text">
+        "Pendidikan Saya. \n\n"
+
+        "~ SDN 01 Pengadegan ~ \n"
+        "Saya lulus pada tahun 2013 dimana pada masa SD lah kita masih merasa ingin bermain dan bermain\n\n"
+
+        "~ MTsN 23 Jakarta ~\n"
+        "Saya lulus pada tahun 2016, dan pengalaman coding saya dimulai dari sini ,dan pengalaman demi pengalaman \n"
+        "kita temui\n\n"
+
+        "~ SMK BCA School~ \n"
+        "Saya lulus pada tahun 2019, mulai menjadi dewasa hihihi\n\n"
+
+        "~ STIMIK Mercusuar ~\n"
+        "Hingga saat ini saya masih mencari jati diri sebenarnya ehehhe ,maksutnya mencari gelar S1 di STIMIK Mercusuar\n"
+
+    </string>
+    <string name="pengalaman_text">
+        "Pengalaman Saya . \n\n"
+
+        "Saya mulai bekerja setelah lulus SMK dan pengalaman mengenai tuntutan untuk mencoba hal baru dan hal hal menarik lain nya\n\n"
+
+        "dan project demi project saya kerjai, baik office or project perorangan\n\n"
+
+        "hingga saat ini saya sedang kontrak dengan Huawei, uupsss.,cukup sedikit saja about saya terimakasih"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_pendidikan">ScrollingActivity</string>
+    <string name="title_activity_pengalaman">ScrollingActivity</string>
+    <string name="title_activity_facebook">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--for facebook login-->
+
+    <!--facebook login ends-->
+
+    <!--error messages-->
+
+</resources>

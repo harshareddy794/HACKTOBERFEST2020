@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    style="@style/parent.contentLayout"
+    android:background="#00000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.azhar.utsmercusuar.HomeKuActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="92dp"
+                    android:layout_gravity="bottom"
+                    android:text="I'm  \nAzhar Ashilah"
+                    android:textColor="#6E797A"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="161dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/circle_cropped" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:onClick="activityFacebook"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/home_gradient_maths"
+                            android:minHeight="100dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_maths" />
+
+                            <TextView
+                                android:id="@+id/textViewSub1Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Facebook" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <!--                    <android.support.v7.widget.CardView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        app:cardCornerRadius="15dp"-->
+                    <!--                        app:cardPreventCornerOverlap="true"-->
+                    <!--                        android:layout_marginTop="10dp">-->
+
+                    <!--                        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:minHeight="100dp"-->
+                    <!--                            gl:end_color="@color/gradientLightYellow2"-->
+                    <!--                            gl:start_color="@color/gradientLightOrange2"-->
+                    <!--                            gl:orientation="LEFT_RIGHT"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:maxHeight="90dp"-->
+                    <!--                                android:src="@drawable/home_ic_chemistry"-->
+                    <!--                                style="@style/homeCardImage"/>-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/textViewSub3Title"-->
+                    <!--                                android:text="Chemistry"-->
+                    <!--                                style="@style/viewParent.headerText.HomeCardTitle" />-->
+
+
+                    <!--                        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                    <!--                    </android.support.v7.widget.CardView>-->
+                    <!--                    <android.support.v7.widget.CardView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        app:cardCornerRadius="15dp"-->
+                    <!--                        app:cardPreventCornerOverlap="true"-->
+                    <!--                        android:layout_marginTop="10dp">-->
+
+                    <!--                        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:minHeight="100dp"-->
+                    <!--                            gl:start_color="@color/gradientViolet"-->
+                    <!--                            gl:end_color="@color/gradientLightBlue"-->
+                    <!--                            gl:orientation="LEFT_RIGHT"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:maxHeight="90dp"-->
+                    <!--                                android:src="@drawable/home_ic_geography"-->
+                    <!--                                style="@style/homeCardImage"/>-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/textViewSub5Title"-->
+                    <!--                                android:text="Geography"-->
+                    <!--                                style="@style/viewParent.headerText.HomeCardTitle" />-->
+
+                    <!--                        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                    <!--                    </android.support.v7.widget.CardView>-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:onClick="activityLinkedin"
+                            android:padding="10dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:orientation="LEFT_RIGHT"
+                            gl:start_color="@color/gradientLightOrange2">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry" />
+
+                            <TextView
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="LinkedIn" />
+
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:onClick="activityInstagram"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:padding="10dp"
+                            gl:end_color="@color/gradientOrange"
+                            gl:orientation="LEFT_RIGHT"
+                            gl:start_color="@color/gradientLightYellow">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_physics" />
+
+                            <TextView
+                                android:id="@+id/textViewSub2Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Instagram" />
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:onClick="activityYoutube"
+                            android:padding="10dp"
+                            gl:end_color="@color/gradientOrange3"
+                            gl:orientation="LEFT_RIGHT"
+                            gl:start_color="@color/gradientLightOrange2">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_biology" />
+
+                            <TextView
+                                android:id="@+id/textViewSub4Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Youtube" />
+
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <!--                    <android.support.v7.widget.CardView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        app:cardCornerRadius="15dp"-->
+                    <!--                        app:cardPreventCornerOverlap="true"-->
+                    <!--                        android:layout_marginTop="10dp">-->
+
+                    <!--                        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:minHeight="100dp"-->
+                    <!--                            gl:start_color="@color/gradientLightGreen"-->
+                    <!--                            gl:end_color="@color/gradientLightBlue"-->
+                    <!--                            gl:orientation="LEFT_RIGHT"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:maxHeight="90dp"-->
+                    <!--                                android:src="@drawable/home_ic_chemistry"-->
+                    <!--                                style="@style/homeCardImage" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/textViewSub6Title"-->
+                    <!--                                android:text="Politics"-->
+                    <!--                                style="@style/viewParent.headerText.HomeCardTitle" />-->
+
+                    <!--                        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                    <!--                    </android.support.v7.widget.CardView>-->
+                    <!--                    <android.support.v7.widget.CardView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        app:cardCornerRadius="15dp"-->
+                    <!--                        app:cardPreventCornerOverlap="true"-->
+                    <!--                        android:layout_marginTop="10dp">-->
+
+                    <!--                        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:minHeight="100dp"-->
+                    <!--                            gl:start_color="@color/gradientLightOrange2"-->
+                    <!--                            gl:end_color="@color/gradientOrange3"-->
+                    <!--                            gl:orientation="LEFT_RIGHT"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:maxHeight="90dp"-->
+                    <!--                                android:src="@drawable/home_ic_biology"-->
+                    <!--                                style="@style/homeCardImage" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:text="Biology"-->
+                    <!--                                style="@style/viewParent.headerText.HomeCardTitle" />-->
+
+
+                    <!--                        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                    <!--                    </android.support.v7.widget.CardView>-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
