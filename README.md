@@ -48,7 +48,7 @@ Check out the [CONTRIBUTE.md](https://github.com/harshareddy794/HACTOBERFEST2020
 
 ---
 
-## 6. Commit all your changes
+## 6. Commit all your Changes
 
 It's finally that time when you commit your changes and leave a beautiful commit message behind. You can run the following commands:
 
